@@ -22,7 +22,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route exact path="/" element={<FunnelOne/>} />
-        <Route exact path="/free-pdf" element={<FunnelTwo/>} />
+        <Route path="/free-pdf" element={<FunnelTwo/>} />
       </Routes>
     </Router>
   );
