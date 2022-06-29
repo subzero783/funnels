@@ -6,7 +6,8 @@ import { render } from "react-dom";
 import { 
   BrowserRouter as Router,
   Route,
-  Routes
+  Routes,
+  Switch
 } from "react-router-dom";
 
 import './index.scss';
@@ -21,8 +22,10 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/free-pdf" element={<FunnelTwo/>} />
-        <Route exact path="/" element={<FunnelOne/>} />
+        <Switch>
+          <Route path="/free-pdf" element={<FunnelTwo/>} />
+          <Route exact path="/" element={<FunnelOne/>} />
+        </Switch>
       </Routes>
     </Router>
   );
