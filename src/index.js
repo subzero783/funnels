@@ -21,8 +21,8 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<FunnelOne/>} />
         <Route path="/free-pdf" element={<FunnelTwo/>} />
+        <Route exact path="/" element={<FunnelOne/>} />
       </Routes>
     </Router>
   );
